@@ -16,13 +16,19 @@ int main() {
         cout << 0 << endl;
         return 0;
     }
-    long j;
-    for (long i = 5; i <= n; i += 5){
-        j = i;
-        while (j % 5 == 0){
-            j /= 5;
-            five++;
-        }
-    } 
-    cout << five << endl;
+    // long j;
+    // for (long i = 5; i <= n; i += 5){
+    //     j = i;
+    //     while (j % 5 == 0){
+    //         j /= 5;
+    //         five++;
+    //     }
+    // } 
+     int q=0;
+           while(n>=5)
+           {
+        	   q+=n/5;
+        	   n=n/5;
+           }
+    cout << q << endl;
 } 
