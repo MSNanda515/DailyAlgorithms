@@ -11,10 +11,12 @@ public class QuestionsPanel extends JPanel{
     ArrayList<String> correctAns;
 
     QuestionsPanel() {
+        defineQuesAns();
+        int i = 0;
+        // define the components to be used
+        JRadioButton[] options = new JRadioButton[4];
+        JButton submit = new JButton("Submit");
 
-        JLabel l1 = new JLabel("HELLO THERE");
-        l1.setBounds(10, 10, 100, 30);
-        this.add(l1);
 
         this.setSize(400, 400);
         this.setLayout(null);
