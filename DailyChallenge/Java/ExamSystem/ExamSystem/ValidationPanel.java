@@ -29,16 +29,20 @@ class ValidationPanel extends JPanel{
         JLabel labelWrongInfo = new JLabel();
         labelWrongInfo.setBounds(80, 180, 200, 30);
         this.add(labelWrongInfo);
+        labelWrongInfo.setForeground(Color.red);
 
         // Define the buttons to validate password
         JButton signin = new JButton("Sign In");
         signin.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                if (textUsername.getText() == Username && textPass.getPassword() == Password){
+                if (textUsername.getText().equals(Username) && new String(textPass.getPassword()).equals(Password)){
+                    System.out.println("Bye");
                     // Procees to the next Panel
                 }
                 else {
-
+                    labelWrongInfo.setText("Invalid Username or Password!");
+                    System.out.println("Username: " + Username + " " + textUsername.getText());
+                    System.out.println("Password: " + Password + " " + new String(textPass.getPassword()));
                 }
             }
         });
