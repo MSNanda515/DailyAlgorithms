@@ -1,7 +1,6 @@
 package ExamSystem;
 
 import javax.swing.*;
-import javax.xml.xpath.XPath;
 import java.awt.event.*;
 import java.awt.*;
 import java.util.ArrayList;
