@@ -1,26 +1,14 @@
-import java.awt.event.*;    
-import java.awt.*;    
-import javax.swing.*;     
-class ColorChooserExample extends JFrame implements ActionListener {    
-JButton b;    
-Container c;    
-ColorChooserExample(){    
-    c=getContentPane();    
-    c.setLayout(new FlowLayout());         
-    b=new JButton("color");    
-    b.addActionListener(this);         
-    c.add(b);    
-}    
-public void actionPerformed(ActionEvent e) {    
-Color initialcolor=Color.RED;    
-Color color=JColorChooser.showDialog(this,"Select a color",initialcolor);    
-c.setBackground(color);    
-}    
-    
-public static void main(String[] args) {    
-    ColorChooserExample ch=new ColorChooserExample();    
-    ch.setSize(400,400);    
-    ch.setVisible(true);    
-    ch.setDefaultCloseOperation(EXIT_ON_CLOSE);    
-}    
-}    
+//First.java  
+import java.applet.Applet;  
+import java.awt.Graphics;  
+class First extends Applet{  
+  
+public void paint(Graphics g){  
+g.drawString("welcome to applet",150,150);  
+}  
+  
+}  
+/* 
+<applet code="First.class" width="300" height="300"> 
+</applet> 
+*/  
