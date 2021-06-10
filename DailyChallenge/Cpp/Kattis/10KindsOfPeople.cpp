@@ -5,10 +5,10 @@
 
 using namespace std;
 
-int checkConn(string* map, int r, int c, int row, int col, unordered_map <int, unordered_set<int> >& graph) {
-  int dir[][2] = {{-1, -1}, {-1, 0}, {-1, 1}, {0, 1}, {0, -1}, {1, -1}, {1, 0}, {1, 1}};
+void checkConn(string* map, int r, int c, int row, int col, unordered_map <int, unordered_set<int> >& graph) {
+  int dir[][2] = {{-1, 0}, {0, 1}, {0, -1}, {1, 0}};
   int conR, conC;
-  for (int k = 0; k < 8; k++) {
+  for (int k = 0; k < 4; k++) {
     conR = row + dir[k][0];
     conC = col + dir[k][1];
     if (conR < 0 || conC < 0 || conR >= r || conC >= c)
