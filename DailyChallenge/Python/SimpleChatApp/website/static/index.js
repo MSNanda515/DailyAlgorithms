@@ -11,22 +11,33 @@ $(function() {
           function(data) {
 
           });
+      
   });
 });
 
 
-function validate(name) {
-  if (name.length >= 2) {
-    return true;
-  }
-  return false;
+window.onload = function (){
+  var update_loop = setInterval(update, 100);
+  update()
+};
+
+
+function update() {
+  fetch('/get_messages')
+    .then((response) => response.json())
+    .then(function(text) {
+      // console.log('GET response text: ');
+      // console.log(text);
+      test = document.getElementById("testPara");
+      test.innerHTML = '';
+      for (let i = 0; i < text.messages.length; i++) {
+        test.innerHTML += text.messages[i] + "<br />"
+        // console.log(text[i])
+      }
+    })
+    .catch((e) => {
+      console.log("Exception:" + e)
+    });
 }
 
 
-
-fetch('/get_messages')
-  .then(() => response.text)
-  .then(function() {
-    console.log('GET response text: ');
-    console.log(text);
-  });

@@ -7,6 +7,7 @@ import time
 NAME_KEY = 'name'
 
 client = None
+messages = []
 
 app = Flask(__name__)
 app.secret_key = "hello"
@@ -19,6 +20,7 @@ def disconnect():
   global client
   if client:
     client.disconnect()
+    client = None
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
@@ -69,20 +71,23 @@ def send_message():
   return "none"
 
 
-app.route("/get_messages")
+@app.route("/get_messages")
 def get_messages():
-  return jsonify({"messages": messages})
+    return jsonify({"messages": messages})
+
 
 def update_message():
   '''
+    Updates the list of local messages
+    :return: None
   '''
-  msgs = []
+  global messages
   run = True
   while run:
     if not client: continue
     time.sleep(0.1)
     new_messages = client.get_messages()
-    msgs.extend(new_messages)
+    messages.extend(new_messages)
 
     for msg in new_messages:
       print (msg)
@@ -95,4 +100,5 @@ def update_message():
 
 
 if __name__ == "__main__":
+  Thread(target=update_message).start()
   app.run(debug=True)
