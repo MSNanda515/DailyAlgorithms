@@ -1,15 +1,4 @@
-// $(function() {
-//   $('#sendBtn').bind('click', function() {
-//     $.getJson('/run',
-//       {
-//         value: va
-//       },
-//       function(data) {
-//       value = document.getElementById("msg").value
-//     });
-//     return false;
-//   });
-// });
+
 
 $(function() {
   $('#sendBtn').bind('click', function() {
@@ -32,3 +21,12 @@ function validate(name) {
   }
   return false;
 }
+
+
+
+fetch('/get_messages')
+  .then(() => response.text)
+  .then(function() {
+    console.log('GET response text: ');
+    console.log(text);
+  });

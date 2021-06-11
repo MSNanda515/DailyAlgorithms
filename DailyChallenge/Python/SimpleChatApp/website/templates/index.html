@@ -3,11 +3,7 @@
 {% block title %} Home {% endblock %}
 {%block content %} 
 
-{% if login %}
-{% block messageGreen %}{{session["name"]}} logged in! {% endblock %}
-{% endif %}
 
-<h1>TEST</h1>
 
 <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="Message" aria-label="Message" id="msg">

@@ -20,15 +20,15 @@ class Client:
     '''
     self.client_socket = socket(AF_INET, SOCK_STREAM)
     self.client_socket.connect(self.ADDR) 
-    receive_thread = Thread(target=self.receive_messages)
+    receive_thread = Thread(target=self.receive_message)
     receive_thread.start()
-    self.send_messages(name)
+    self.send_message(name)
     self.lock = Lock()
     pass
 
-  def receive_messages(self):
+  def receive_message(self):
     '''
-    receive messages from server
+    receive message from server
     :param none
     :return: None
     '''
@@ -44,7 +44,7 @@ class Client:
         break
     pass
 
-  def send_messages(self, msg):
+  def send_message(self, msg):
     self.client_socket.send(bytes(msg, "utf8"))
     if msg == "{quit}":
       self.client_socket.close()
@@ -61,5 +61,5 @@ class Client:
     return messages_copy
 
   def disconnect(self):
-    self.send_messages("{quit}")
+    self.send_message("{quit}")
     self.client_socket.close()
