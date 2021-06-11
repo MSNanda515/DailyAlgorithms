@@ -1,5 +1,5 @@
 $(function() {
-  $('a#test').bind('click', function() {
+  $('#sendBtn').bind('click', function() {
     $.getJson('/run',
       function(data) {
       console.log("test")
