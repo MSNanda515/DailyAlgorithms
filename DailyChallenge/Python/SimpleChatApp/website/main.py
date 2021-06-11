@@ -25,12 +25,10 @@ def logout():
 @app.route("/home")
 @app.route("/")
 def home():
-  if NAME_KEY not in session:
-    return redirect(url_for("home"))
-
-  name = session(NAME_KEY)
+  # if NAME_KEY not in session:
+  #   return redirect(url_for("home"))
+  # name = session(NAME_KEY)
   return render_template("index.html")
-
 
 @app.route("/run")
 def run():
