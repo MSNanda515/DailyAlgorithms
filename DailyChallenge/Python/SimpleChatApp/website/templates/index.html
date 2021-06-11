@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 
 {% block title %} Home {% endblock %}
-
 {%block content %} 
+
+{% if login %}
+{% block messageGreen %}{{session["name"]}} logged in! {% endblock %}
+{% endif %}
+
 <h1>TEST</h1>
 <form>
   <button id="test" type="button" class="btn btn-primary btn-lg">Large button</button>
 </form>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 {% endblock %}

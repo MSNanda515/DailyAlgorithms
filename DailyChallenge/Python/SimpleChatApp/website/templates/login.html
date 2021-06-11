@@ -2,6 +2,12 @@
 
 {% block title %} Login {% endblock %}
 
+{% block messageGrey %}
+{% if message %}
+{{session["name"] logged out!}}
+{% endif %}
+{% endblock %}
+
 {%block content %} 
 <form class="form-inline" action="#" method="POST">
   <div class="form-group mb-2">
