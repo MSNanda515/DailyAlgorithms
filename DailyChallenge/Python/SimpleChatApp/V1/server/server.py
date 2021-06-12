@@ -30,7 +30,10 @@ def broadcast(msg, name):
   '''
   for person in people:
     client = person.client
-    client.send(bytes(name + ": " + msg, "utf8" ))
+    try:
+      client.send(bytes(name + ": " + msg, "utf8" ))
+    except Exception as e:
+      print("[Exception_broadcast]", e)
   pass
 
 
