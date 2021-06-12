@@ -20,8 +20,8 @@ class Client:
     '''
     self.client_socket = socket(AF_INET, SOCK_STREAM)
     self.client_socket.connect(self.ADDR) 
-    receive_thread = Thread(target=self.receive_message)
-    receive_thread.start()
+    self.receive_thread = Thread(target=self.receive_message)
+    self.receive_thread.start()
     self.send_message(name)
     self.lock = Lock()
     pass
@@ -40,7 +40,7 @@ class Client:
         self.lock.release()
         print(msg)
       except Exception as e:
-        print("[Exception]",e)
+        print("[Exception111]",e)
         break
     pass
 
@@ -48,6 +48,7 @@ class Client:
     try:
       self.client_socket.send(bytes(msg, "utf8"))
       if msg == "{quit}":
+
         self.client_socket.close()
     except Exception as e:
       self.client_socket = socket(AF_INET, SOCK_STREAM)

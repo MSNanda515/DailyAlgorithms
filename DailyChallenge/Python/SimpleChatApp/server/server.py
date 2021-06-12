@@ -56,14 +56,15 @@ def client_communication(person):
       print(f"{name}: ", msg)
       if msg == "{quit}":
         msg = f"{name} has left the chat"
-        broadcast(msg, "")
-        client.send(bytes("{quit}", "utf8"))
         people.remove(person)
+        broadcast(msg, "")
+        # client.send(bytes("{quit}", "utf8"))
+        # people.remove(person)
         client.close()
       else:
         broadcast(msg, name)
     except Exception as e:
-      print("[Exception]", e)
+      print("[Exception222]", e)
   pass
 
 
