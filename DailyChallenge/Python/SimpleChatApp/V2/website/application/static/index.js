@@ -49,5 +49,110 @@ async function load_name() {
 }
 
 async function load_message() {
-  return await fetch
+  return await fetch("/get_message")
+    .then(async function (response) {
+      return await response.json();
+    })
+    .then(function (text) {
+      console.log(text)
+      return text;
+    })
 }
+
+$(function () {
+  $(".msgs").css({ height: $(window).height() * 0.7 + "px"});
+
+  $(window).bind("resize", function () {
+    $(".msgs".css({ height: $(window).height() * 0.7 + "px"}))
+  });
+});
+
+function scrollSmoothToBottom(id) {
+  var div = document.getElementById(id)
+  $("#" + id).animate(
+    {
+      scrollTop: div.scrollHeight - div.clientHeight,
+    },
+    500
+  );
+}
+
+function dateNow() {
+  // Gets the current date and time and converts it into the
+  // correct format
+  var date = new Date();
+  var yyyy = date.getFullYear();
+  var dd = date.getDate()
+  var mm = date.getMonth() + 1;
+
+  if (dd < 10) gg = "0" + dd;
+  if (mm < 10) mm = "0" + mm;
+
+  var cur_day = yyyy + "-" + mm + "=" + dd;
+  
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+
+  if (hours < 10) hours = "0" + hours;
+  if (minutes < 10) minutes = "0" + minutes;
+
+  return cur_day + " " + hours + ":" + minutes;
+}
+
+
+var socket = io.connect("https://" + document.domain + ":" + location.port);
+
+socket.on("connect", async function() {
+  var usr_name = await load_name();
+  if (usr_name != "") {
+    // User has connected
+    socket.event("event", {
+      message: user_name + " just connected to the server!",
+      connect: true,
+    });
+  }
+
+  var form = $("form#msgForm").on("submit", async function (e) {
+    e.preventDefault();
+
+    // Read the input from the message box
+    let msg_input = document.getElementById("msg")
+    let user_input = msg_input.value;
+    let user_name = await load_name();
+
+    // Clear the text box
+    msg_input.value = "";
+    
+    // Broadcast message to the other user
+    socket.emit("event", {
+      message: user_input,
+      name: user_input,
+    });
+  });
+})
+
+
+socket.on("disconnect", async function (msg) {
+  var usr_name = await load_name();
+  socket.emit("event" , {
+    message: user_name + "just left the server..."
+  });
+});
+
+socket.on("message response", function () {
+  var msgs = await load_messages();
+  for (let i = 0; i < msgs.length; i++) {
+    scroll = false;
+    if (i == msgs.length - 1) {
+      scroll = true;
+    }
+    add_messages(msgs[i], scroll);
+  }
+
+  let name = await load_name();
+  if (name != "") {
+    $("#login").hide();
+  } else {
+    $("#logout").hide();
+  }
+});
