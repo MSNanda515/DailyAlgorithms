@@ -24,7 +24,7 @@ int main() {
   getline(cin, str);
   int fact = 1;
   unordered_set<char> repCharSet;
-  int repChar = 1;
+  int repChar = 1 ;
   for (int i = 0; i < str.size(); i++) {
     fact *= (i+1);
     if (repCharSet.find(str[i]) == repCharSet.end()) {
