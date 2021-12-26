@@ -19,11 +19,8 @@ def trailing_zeros(n):
     i = 5
     last_5 = 1
     while i <= n:
-        no5 = no5 + last_5
-        last_5 = i
+        no5 = no5 + int(n / i)
         i = i * 5
-    if last_5 < no and i > no:
-        no5 = no5 + (no - last_5)/
     print(no5)
 
 
