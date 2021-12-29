@@ -1,2 +1,2 @@
 
-add_executable(appleDivision Python/CSES/appleDivision.cpp)
+add_executable(chessboardAndQueens Cpp/CSES/chessboardAndQueens.cpp)
