@@ -2,4 +2,4 @@
 **/.vs_code
 **/.o*
 **/.idea/
-
+cmake-build*/
