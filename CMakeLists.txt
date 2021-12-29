@@ -1,2 +1,2 @@
 
-add_executable(chessboardAndQueens Cpp/CSES/chessboardAndQueens.cpp)
+add_executable(digitQueries Cpp/CSES/digitQueries.cpp)
