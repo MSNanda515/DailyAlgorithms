@@ -6,11 +6,11 @@
 using namespace std;
 
 int main() {
-    int n, x;
+    long n, x;
     cin >> n >> x;
-    vector<int> weights;
-    for (int i = 0; i < n; i++) {
-        int temp;
+    vector<long> weights;
+    for (long i = 0; i < n; i++) {
+        long temp;
         cin >> temp;
         weights.push_back(temp);
     }
@@ -18,7 +18,7 @@ int main() {
 
     auto startChild = weights.begin();
     auto endChild = weights.end() - 1;
-    int gond = 0;
+    long gond = 0;
     while(startChild <= endChild) {
         if ((*startChild) + (*endChild) <= x) {
             startChild++;
