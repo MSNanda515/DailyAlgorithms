@@ -7,6 +7,8 @@
 
 using namespace std;
 
+long long unAccFun = 0;
+
 long long traverse(int& cur, vector<int>& funFact, vector<int>& point, int& n, unordered_map<int, vector<int>>& rec, unordered_set<int>& init) {
     if (init.find(cur) != init.end()) {
         return funFact[cur - 1];
@@ -20,17 +22,15 @@ long long traverse(int& cur, vector<int>& funFact, vector<int>& point, int& n, u
         }
     }
 
-    int status = 0;
+    long long sumAllFun = 0;
     for (int i = 0; i < funTemp.size(); i++) {
-        if (status == 0 && funTemp[i] == minFunTemp) {
-            funSoFar += max(funTemp[i], (long long)funFact[cur-1]);
-            status = 1;
-        }
-        else {
-            funSoFar += funTemp[i];
-        }
+        sumAllFun += funTemp[i];
     }
-    return funSoFar;
+
+    sumAllFun -= minFunTemp;
+    unAccFun += sumAllFun;
+
+    return max(minFunTemp, (long long)funFact[cur-1]);
 }
 
 void sol(vector<int>& funFact, vector<int>& point, int &n) {
@@ -45,11 +45,12 @@ void sol(vector<int>& funFact, vector<int>& point, int &n) {
         }
     }
 
+    unAccFun = 0;
     long long totFun = 0;
     for (int i = 0; i < rec[0].size(); i++) {
         totFun += traverse(rec[0][i], funFact, point, n, rec, init);
     }
-    cout << totFun << '\n';
+    cout << totFun + unAccFun << '\n';
 }
 
 int main() {
