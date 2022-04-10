@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string sol(string str) {
+string sol() {
     
 }
 
@@ -16,6 +16,6 @@ int main() {
     for (int k = 0; k < t; k++) {
         string str;
         cin >> str;
-        cout << "Case #" << k + 1 << ": " << sol(str) << '\n';
+        cout << "Case #" << k + 1 << ": " << sol() << '\n';
     }
 }
