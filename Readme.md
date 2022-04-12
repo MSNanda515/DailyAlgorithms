@@ -6,6 +6,7 @@ Questions:
 * [Geeks For Geeks](https://practice.geeksforgeeks.org/problem-of-the-day)
     1. [Rank The Permutations](https://practice.geeksforgeeks.org/problems/rank-the-permutations2229/1)
     2. [Form A Palindrome](https://practice.geeksforgeeks.org/problems/rank-the-permutations2229/1)
+    3. [Negative Weight Cycles](https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1#)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
