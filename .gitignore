@@ -1,5 +1,6 @@
 **/.DS_Store
-**/.vs_code
+**/.vscode
 **/.o*
 **/.idea/
 cmake-build*/
+**/*.out

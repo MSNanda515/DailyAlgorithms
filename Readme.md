@@ -12,3 +12,5 @@ Questions:
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
 
+* [Kattis](https://open.kattis.com/problems)
+    1. [Basketball One-on-One](https://open.kattis.com/problems/basketballoneonone)
