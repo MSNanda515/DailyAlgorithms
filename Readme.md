@@ -9,6 +9,7 @@ Questions:
     3. [Negative Weight Cycles](https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1#)
     4. [Maximum Sum Rectanglt](https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle2948/1#)
     5. [Word Wrap](https://practice.geeksforgeeks.org/problems/word-wrap1646/1)
+    6. [K-ary Tree](https://practice.geeksforgeeks.org/problems/k-ary-tree1235/1#)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
