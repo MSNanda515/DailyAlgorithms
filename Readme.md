@@ -11,6 +11,7 @@ Questions:
     5. [Word Wrap](https://practice.geeksforgeeks.org/problems/word-wrap1646/1)
     6. [K-ary Tree](https://practice.geeksforgeeks.org/problems/k-ary-tree1235/1#)
     7. [Partition Linked List](https://practice.geeksforgeeks.org/problems/partition-a-linked-list-around-a-given-value/1#)
+    8. [Theft at World Bank](https://practice.geeksforgeeks.org/problems/theft-at-the-world-bank2156/1)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
