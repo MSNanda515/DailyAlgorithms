@@ -1,3 +1,8 @@
+// https://cses.fi/problemset/task/1640/
+// Sorts the array keeping track of the final and the initial index of each value
+// use two pointers, one initialized at the first element and the second at the last
+// Modify the pointers based on the current sum
+
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -7,39 +12,43 @@
 
 using namespace std;
 
-void sol(vector<int>& num, int x) {
-    unordered_map<int, int> difPos;
-    vector<int> sameDif;
-    for (int i = 0; i < num.size(); i++) {
-        difPos[x-num[i]] = i;
-        if (x - num[i] == num[i]) {
-            sameDif.push_back(i);
-        }
-    }
-    for (int i = 0; i < num.size(); i++) {
-        if (difPos.find(num[i]) != difPos.end()) {
-            if (x - num[i] == num[i]) {
-                if (sameDif.size() == 1) {
-                    continue;
-                } 
-                cout << sameDif[0]+1 << ' ' << sameDif[1]+1 << '\n';
-                return;
-            }
-            cout << i+1 << ' ' << difPos[num[i]] + 1 << '\n';
+void printSol(int x, int y) {
+    cout << x << ' ' << y  << '\n';
+}
+
+struct pack {
+    int val, ind;
+};
+
+bool compPack(pack& p1, pack& p2) {
+    return p1.val < p2.val;
+}
+
+void sol(vector<pack>& num, int x) {
+    sort(num.begin(), num.end(), compPack);
+    int lb = 0, ub = num.size()-1;
+    while (lb < ub) {
+        long tempSum = num[lb].val + num[ub].val;
+        if (tempSum == x) {
+            printSol(num[lb].ind, num[ub].ind);
             return;
+        } else if (tempSum > x) {
+            ub--;
+        } else {
+            lb++;
         }
     }
-    cout << "IMPOSSIBLE";
+    cout << "IMPOSSIBLE" << '\n';
 }
 
 int main(){
     int n, x;
     cin >> n >> x;
-    vector<int> num;
+    vector<pack> num;
     for (int i = 0; i < n; i++) {
         int temp;
         cin >> temp;
-        num.push_back(temp);
+        num.push_back({temp, i+1});
     }
     sol(num, x);
 }
