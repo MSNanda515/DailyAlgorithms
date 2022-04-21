@@ -17,6 +17,7 @@ Questions:
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
     2. [Movie Festival](https://cses.fi/problemset/task/1629/)
     3. [Sum of Two Values](https://cses.fi/problemset/task/1640/)
+    4. [Maximum Subarray Sum](https://cses.fi/problemset/task/1643)
 
 * [Kattis](https://open.kattis.com/problems)
     1. [Basketball One-on-One](https://open.kattis.com/problems/basketballoneonone)
