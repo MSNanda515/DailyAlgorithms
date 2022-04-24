@@ -7,7 +7,7 @@
 
 using namespace std;
 
-vector<long> findFactors(long num,) {
+vector<long> findFactors(long num) {
     vector<long> fact;
     long sqNum = sqrt(num);
     for (long i = 0; i <= sqNum; i++) {
