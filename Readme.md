@@ -14,6 +14,7 @@ Questions:
     8. [Theft at World Bank](https://practice.geeksforgeeks.org/problems/theft-at-the-world-bank2156/1)
     9. [Euclerian Path in Undirected Graph](https://practice.geeksforgeeks.org/problems/eulerian-path-in-an-undirected-graph5052/1#)
     10. [Pairs of Non Coinciding Points](https://practice.geeksforgeeks.org/problems/pairs-of-non-coinciding-points4141/1)
+    11. (Killing Spree)[https://practice.geeksforgeeks.org/problems/killing-spree3020/1#]
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
