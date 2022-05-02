@@ -16,6 +16,7 @@ Questions:
     10. [Pairs of Non Coinciding Points](https://practice.geeksforgeeks.org/problems/pairs-of-non-coinciding-points4141/1)
     11. [Killing Spree](https://practice.geeksforgeeks.org/problems/killing-spree3020/1#)
     12. [Super Primes](https://practice.geeksforgeeks.org/problems/super-primes2443/1)
+    13. [Party in town](https://practice.geeksforgeeks.org/problems/party-in-town3951/1)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
