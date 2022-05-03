@@ -17,6 +17,7 @@ Questions:
     11. [Killing Spree](https://practice.geeksforgeeks.org/problems/killing-spree3020/1#)
     12. [Super Primes](https://practice.geeksforgeeks.org/problems/super-primes2443/1)
     13. [Party in town](https://practice.geeksforgeeks.org/problems/party-in-town3951/1)
+    14. [Subsets with Xor values](https://practice.geeksforgeeks.org/problems/subsets-with-xor-value2023/1#)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
