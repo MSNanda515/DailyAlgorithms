@@ -21,6 +21,7 @@ Questions:
     15. [Kill Captain America](https://practice.geeksforgeeks.org/problems/kill-captain-america0228/1#)
     16. [Probability of Knight](https://practice.geeksforgeeks.org/problems/probability-of-knight5529/1)
     17. [Broken Blocks](https://practice.geeksforgeeks.org/problems/broken-blocks0022/1)
+    18. [Kth Smallest Element](https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
