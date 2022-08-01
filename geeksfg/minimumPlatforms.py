@@ -1,4 +1,11 @@
 # https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1?page=1&company[]=Amazon&curated[]=1&sortBy=submissions
+"""
+Logic:
+Sort the order in which the trains arrive. Whenever a new train arrives, make sure that the trains that were supposed to leave
+before the concerned arrival time have left. Give the arrived train any available platform. If no platform available, allocate
+a new platform. Return the count of the min platforms required
+"""
+
 
 import heapq as hq
 

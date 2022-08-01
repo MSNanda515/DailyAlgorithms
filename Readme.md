@@ -23,6 +23,7 @@ Questions:
     17. [Broken Blocks](https://practice.geeksforgeeks.org/problems/broken-blocks0022/1)
     18. [Kth Smallest Element](https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1)
     19. [Minimum Platforms](https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620)
+    20. [Coin Change](https://practice.geeksforgeeks.org/problems/coin-change2448/1)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
