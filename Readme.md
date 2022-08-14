@@ -25,6 +25,7 @@ Questions:
     19. [Minimum Platforms](https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620)
     20. [Coin Change](https://practice.geeksforgeeks.org/problems/coin-change2448/1)
     21. [Maximum of all subarrays](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1)
+    22. [Overlapping Intervals](https://practice.geeksforgeeks.org/problems/8a644e94faaa94968d8665ba9e0a80d1ae3e0a2d/1)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
