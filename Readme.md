@@ -27,6 +27,7 @@ Questions:
     21. [Maximum of all subarrays](https://practice.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k3101/1)
     22. [Overlapping Intervals](https://practice.geeksforgeeks.org/problems/8a644e94faaa94968d8665ba9e0a80d1ae3e0a2d/1)
     23. [Search In Rotated Array](https://practice.geeksforgeeks.org/problems/search-in-a-rotated-array4618/1?page=2&company[]=Amazon&curated[]=1)
+    24. [Smallest number on left](https://practice.geeksforgeeks.org/problems/smallest-number-on-left3403/1)
 
 * [CSES Problem Set](https://cses.fi/problemset/list/)
     1. [Restuarant Customers](https://cses.fi/problemset/task/1619/)
