@@ -45,3 +45,4 @@ Questions:
     3. [Regular expression matching](https://leetcode.com/problems/regular-expression-matching/description/)
     4. [Container with most water](https://leetcode.com/problems/container-with-most-water/description/)
     5. [Roman To Integer](https://leetcode.com/problems/roman-to-integer/description/)
+    6. [4Sum](https://leetcode.com/problems/4sum/discussion/)
