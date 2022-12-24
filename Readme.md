@@ -48,4 +48,5 @@ Questions:
     6. [4Sum](https://leetcode.com/problems/4sum/discussion/)
     7. [Divide 2 integers](https://leetcode.com/problems/divide-two-integers/description/)
     8. [First Missing Positive Number](https://leetcode.com/problems/first-missing-positive/description/)
-    
+    9. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/submissions/864907048/)
+    10. [Pow X, N](https://leetcode.com/problems/powx-n/submissions/864942634/)
