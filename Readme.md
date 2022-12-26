@@ -51,3 +51,5 @@ Questions:
     9. [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/submissions/864907048/)
     10. [Pow X, N](https://leetcode.com/problems/powx-n/submissions/864942634/)
     11. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+    12. [Jump Game](https://leetcode.com/problems/jump-game/)
+    13. [Unique Paths](https://leetcode.com/problems/unique-paths/)
