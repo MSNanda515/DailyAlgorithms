@@ -55,3 +55,4 @@ Questions:
     13. [Unique Paths](https://leetcode.com/problems/unique-paths/)
     14. [Add One](https://leetcode.com/problems/plus-one/description/)
     15. [Subsets](https://leetcode.com/problems/subsets/description/)
+    16. [Word Search](https://leetcode.com/problems/word-search/description/)
