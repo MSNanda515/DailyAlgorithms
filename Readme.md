@@ -53,3 +53,5 @@ Questions:
     11. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
     12. [Jump Game](https://leetcode.com/problems/jump-game/)
     13. [Unique Paths](https://leetcode.com/problems/unique-paths/)
+    14. [Add One](https://leetcode.com/problems/plus-one/description/)
+    15. [Subsets](https://leetcode.com/problems/subsets/description/)
