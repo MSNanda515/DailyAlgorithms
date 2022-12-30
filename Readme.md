@@ -57,3 +57,5 @@ Questions:
     15. [Subsets](https://leetcode.com/problems/subsets/description/)
     16. [Word Search](https://leetcode.com/problems/word-search/description/)
     17. [Largest Rectangle Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+    18. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
+    19. [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/description/)
