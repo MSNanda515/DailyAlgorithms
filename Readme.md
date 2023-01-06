@@ -61,3 +61,4 @@ Questions:
     19. [Validate BST](https://leetcode.com/problems/validate-binary-search-tree/description/)
     20. [BT Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
     21. [Binary Tree Max Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
+    22. [Word Ladder](https://leetcode.com/problems/word-ladder/description/)
