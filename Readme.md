@@ -62,3 +62,6 @@ Questions:
     20. [BT Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
     21. [Binary Tree Max Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
     22. [Word Ladder](https://leetcode.com/problems/word-ladder/description/)
+    23. [Palindrome Partition](https://leetcode.com/problems/palindrome-partitioning/)
+    24. [Gas Station](https://leetcode.com/problems/gas-station/description/)
+    25. [Copy list with Random Pointers](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
