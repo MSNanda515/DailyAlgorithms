@@ -1,0 +1,6 @@
+mod linkedList;
+
+
+fn main() {
+        
+}
