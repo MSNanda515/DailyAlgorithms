@@ -69,3 +69,4 @@ Questions:
     27. [Minimum X Xor A](https://practice.geeksforgeeks.org/problems/1fc4278adf2a36780f637c7b4cd06391dd1487e4/1)
     28. [Decode String](https://leetcode.com/problems/decode-string/description/)
     29. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
+    30. [Design Underground System](https://leetcode.com/problems/design-underground-system/description/)
