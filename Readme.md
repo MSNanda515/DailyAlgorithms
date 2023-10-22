@@ -38,6 +38,7 @@ Questions:
 
 * [Kattis](https://open.kattis.com/problems)
     1. [Basketball One-on-One](https://open.kattis.com/problems/basketballoneonone)
+    2. [H-Index](https://open.kattis.com/problems/hindex)
 
 * [Leetcode](https://leetcode.com/problemset/all/)
     1. [Longest Palindrome Substring](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -70,3 +71,4 @@ Questions:
     28. [Decode String](https://leetcode.com/problems/decode-string/description/)
     29. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
     30. [Design Underground System](https://leetcode.com/problems/design-underground-system/description/)
+    30. [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray)
