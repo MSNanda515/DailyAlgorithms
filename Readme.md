@@ -72,3 +72,4 @@ Questions:
     29. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
     30. [Design Underground System](https://leetcode.com/problems/design-underground-system/description/)
     30. [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray)
+    40. [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)
