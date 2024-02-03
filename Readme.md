@@ -74,3 +74,4 @@ Questions:
     30. [Maximum Score of a Good Subarray](https://leetcode.com/problems/maximum-score-of-a-good-subarray)
     40. [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)
     41: [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/?envType=daily-question&envId=2024-01-11)
+    42: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
